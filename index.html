@@ -3,56 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SoftGrid Solutions - Day 1</title>
+  <title>SoftGrid Solutions - Web Development & Software Agency</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Responsive Navigation Bar -->
+  <!-- Navbar -->
   <header class="navbar">
     <div class="logo">
-      <img src="https://i.imgur.com/8QfXh2L.png" alt="SoftGrid Logo"> 
+      <div class="logo-icon"></div>
       <span>SoftGrid <b>SOLUTIONS</b></span>
     </div>
     <nav id="nav-menu">
       <a href="#home">Home</a>
       <a href="#about">About</a>
-      <a href="#skills">Skills</a>
+      <a href="#skills">Tech Stack</a>
       <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <button class="btn-primary">Start Project →</button>
+    <a href="#contact" class="btn-primary">Start Project →</a>
     <div class="hamburger" onclick="toggleMenu()">☰</div>
   </header>
 
   <!-- Hero Section -->
   <section id="home" class="hero">
     <div class="hero-text">
-      <p class="tag">PROJECT DAY 1 TASK</p>
-      <h1>Day 1</h1>
-      <p>We build modern, responsive and scalable web solutions for your business growth.</p>
-      <button class="btn-primary">Start Project →</button>
+      <h1>We Build Modern Web Solutions That Grow Your Business</h1>
+      <p>SoftGrid Solutions is a software agency specializing in responsive websites, web apps, and scalable digital products.</p>
+      <div class="hero-btns">
+        <a href="#services" class="btn-primary">Our Services</a>
+        <a href="#contact" class="btn-outline">Get a Quote</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="https://i.imgur.com/3ZQZQ9p.png" alt="Web Development">
     </div>
   </section>
 
-  <!-- About Me Section -->
+  <!-- About Section -->
   <section id="about" class="section">
     <div class="container">
-      <h2>About Me</h2>
-      <p>Hello! I am a web developer at SoftGrid Solutions. We specialize in creating clean, fast and responsive websites. Our goal is to turn your ideas into reality with modern design and code.</p>
+      <h2>About SoftGrid Solutions</h2>
+      <p>We are a team of passionate developers and designers. At SoftGrid, we turn ideas into fast, clean and responsive websites. Our mission is to help startups and businesses establish a strong online presence with modern technology.</p>
+      <div class="about-stats">
+        <div><h3>50+</h3><p>Projects Completed</p></div>
+        <div><h3>20+</h3><p>Happy Clients</p></div>
+        <div><h3>3+</h3><p>Years Experience</p></div>
+      </div>
     </div>
   </section>
 
-  <!-- Skills Section -->
+  <!-- Skills / Tech Stack Section -->
   <section id="skills" class="section bg-light">
     <div class="container">
-      <h2>Skills</h2>
+      <h2>Our Tech Stack</h2>
       <div class="skills-grid">
-        <div class="skill-card">HTML5</div>
-        <div class="skill-card">CSS3</div>
-        <div class="skill-card">JavaScript</div>
-        <div class="skill-card">Responsive Design</div>
-        <div class="skill-card">React</div>
-        <div class="skill-card">Tailwind</div>
+        <div class="skill-card">HTML5 & CSS3</div>
+        <div class="skill-card">JavaScript & React</div>
+        <div class="skill-card">Tailwind & Bootstrap</div>
+        <div class="skill-card">Node.js & MongoDB</div>
+        <div class="skill-card">WordPress</div>
+        <div class="skill-card">UI/UX Design</div>
       </div>
     </div>
   </section>
@@ -60,27 +71,41 @@
   <!-- Services Section -->
   <section id="services" class="section">
     <div class="container">
-      <h2>Services</h2>
+      <h2>Our Services</h2>
       <div class="services-grid">
         <div class="service-card">
           <h3>Web Development</h3>
-          <p>Custom websites built with latest technologies.</p>
+          <p>Custom, fast and SEO-friendly websites for businesses and startups.</p>
         </div>
         <div class="service-card">
-          <h3>UI/UX Design</h3>
-          <p>Beautiful and user-friendly interfaces.</p>
+          <h3>Responsive Design</h3>
+          <p>Websites that look perfect on mobile, tablet and desktop.</p>
         </div>
         <div class="service-card">
-          <h3>Mobile Responsive</h3>
-          <p>Websites that work perfectly on all devices.</p>
+          <h3>E-Commerce Solutions</h3>
+          <p>Complete online stores with payment gateway integration.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Contact Section -->
+  <section id="contact" class="section bg-light">
+    <div class="container">
+      <h2>Let's Start Your Project</h2>
+      <p class="contact-text">Have an idea? Let's discuss it. We will get back to you within 24 hours.</p>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Tell us about your project" rows="5" required></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer>
-    <p>© 2026 SoftGrid Solutions. All rights reserved.</p>
+    <p>© 2026 SoftGrid Solutions. All Rights Reserved. | Hyderabad, Pakistan</p>
   </footer>
 
   <script>
